@@ -10,12 +10,12 @@ ImageCropSample
 2. 自分のプロジェクトに`ImageCropView`ディレクトリ以下をを追加
 3. 使用したいクラスで `YMNImageCropViewController.h` をインポート
 4. `YMNImageCropViewController`のインスタンスを生成してビューを立ち上げる
+5. 切り取った画像はdelegateで呼び元のクラスに返される
 ```
 self.imageCropViewController = [[YMNImageCropViewController alloc] initWithImage:image];
 self.imageCropViewController.delegate = self;
 [self presentViewController:self.imageCropViewController animated:NO completion:nil];
 ```
-5. 切り取った画像はdelegateで呼び元のクラスに返される
 ```
 - (void)imageCropViewController:(UIViewController* )controller didFinishCroppingImage:(UIImage *)image
 {

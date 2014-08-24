@@ -3,6 +3,7 @@ ImageCropSample
 
 画像切り取りのサンプルです
 
+![イメージ](demo.PNG)
 
 ###使い方
 1. git clone git@github.com:yoshimin/ImageCropSample.git

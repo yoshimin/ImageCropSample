@@ -28,6 +28,8 @@
         CGRect toolbarFrame = CGRectMake(0.f, 0.f, self.view.bounds.size.width, 44.f);
         toolbarFrame.origin.y = self.view.bounds.size.height - toolbarFrame.size.height;
         self.toolbar = [[UIToolbar alloc] initWithFrame:toolbarFrame];
+        self.toolbar.barTintColor = [UIColor blackColor];
+        self.toolbar.tintColor = [UIColor whiteColor];
         self.toolbar.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin |
                                         UIViewAutoresizingFlexibleWidth |
                                         UIViewAutoresizingFlexibleRightMargin |

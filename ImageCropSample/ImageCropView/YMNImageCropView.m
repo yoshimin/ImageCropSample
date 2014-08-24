@@ -95,10 +95,13 @@ CGFloat const cropFrameMinSize = 50;
         CGContextRef roundContext = UIGraphicsGetCurrentContext();
         if (self.touchMode == YMNImageCropTouchModeNone || self.touchMode == YMNImageCropTouchModeDrag) {
             CGContextSetRGBFillColor(roundContext, 226.f/255.f, 226.f/255.f, 226.f/255.f, 1.f);
+            CGContextSetRGBStrokeColor(roundContext, 145.f/255.f, 145.f/255.f, 145.f/255.f, 1.f);
         } else {
             CGContextSetRGBFillColor(roundContext, 238.f/255.f, 169.f/255.f, 169.f/255.f, 1.f);
+            CGContextSetRGBStrokeColor(roundContext, 198.f/255.f, 116.f/255.f, 116.f/255.f, 1.f);
         }
         CGContextFillEllipseInRect(roundContext, [value CGRectValue]);
+        CGContextStrokeEllipseInRect(roundContext, [value CGRectValue]);
     }
 }
 

@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "YMNImageCropViewController.h"
 
-@interface ViewController ()
+@interface ViewController ()  <UINavigationControllerDelegate, UIImagePickerControllerDelegate, YMNImageCropViewControllerDelegate>
+
+@property (nonatomic, strong) IBOutlet UIImageView *imageView;
+@property (nonatomic, strong) YMNImageCropViewController *imageCropViewController;
 
 @end
 
@@ -17,13 +21,55 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning
+- (IBAction)chooseImage:(id)sender
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
+    imagePickerController.modalPresentationStyle = UIModalPresentationCurrentContext;
+    imagePickerController.delegate = self;
+    [self presentViewController:imagePickerController animated:YES completion:nil];
+}
+
+- (IBAction)saveImage:(id)sender
+{
+    if (!self.imageView.image) {
+        return;
+    }
+    UIImageWriteToSavedPhotosAlbum(self.imageView.image, nil, nil, nil);
+    [[[UIAlertView alloc] initWithTitle:nil
+                               message:@"Saved!"
+                              delegate:nil
+                     cancelButtonTitle:@"OK"
+                     otherButtonTitles:nil] show];
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    UIImage *image = [info valueForKey:UIImagePickerControllerOriginalImage];
+    self.imageCropViewController = [[YMNImageCropViewController alloc] initWithImage:image];
+    self.imageCropViewController.cropMode = YMNImageCropModeFixedAspect;
+    self.imageCropViewController.cropRectAspectRatio = 1.f;
+    self.imageCropViewController.delegate = self;
+    
+    [self dismissViewControllerAnimated:YES
+                             completion:^{
+                                 if (!image) {
+                                     return;
+                                 }
+                                 [self presentViewController:self.imageCropViewController animated:NO completion:nil];
+                             }];
+    
+}
+
+- (void)imageCropViewController:(UIViewController *)controller didFinishCroppingImage:(UIImage *)image
+{
+    self.imageView.image = image;
+}
+
+- (void)imageCropViewControllerDidCancel:(UIViewController *)controller
+{
+    
 }
 
 @end

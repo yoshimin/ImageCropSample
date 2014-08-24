@@ -13,8 +13,7 @@
 		46B12C41199B4CB300CBDB32 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 46B12C3F199B4CB300CBDB32 /* InfoPlist.strings */; };
 		46B12C43199B4CB300CBDB32 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B12C42199B4CB300CBDB32 /* main.m */; };
 		46B12C47199B4CB300CBDB32 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B12C46199B4CB300CBDB32 /* AppDelegate.m */; };
-		46B12C4A199B4CB300CBDB32 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46B12C48199B4CB300CBDB32 /* Main_iPhone.storyboard */; };
-		46B12C4D199B4CB300CBDB32 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46B12C4B199B4CB300CBDB32 /* Main_iPad.storyboard */; };
+		46B12C4A199B4CB300CBDB32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46B12C48199B4CB300CBDB32 /* Main.storyboard */; };
 		46B12C50199B4CB300CBDB32 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B12C4F199B4CB300CBDB32 /* ViewController.m */; };
 		46B12C52199B4CB300CBDB32 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46B12C51199B4CB300CBDB32 /* Images.xcassets */; };
 		46B12C59199B4CB300CBDB32 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46B12C58199B4CB300CBDB32 /* XCTest.framework */; };
@@ -22,6 +21,8 @@
 		46B12C5B199B4CB300CBDB32 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46B12C3A199B4CB300CBDB32 /* UIKit.framework */; };
 		46B12C63199B4CB300CBDB32 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 46B12C61199B4CB300CBDB32 /* InfoPlist.strings */; };
 		46B12C65199B4CB300CBDB32 /* ImageCropSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B12C64199B4CB300CBDB32 /* ImageCropSampleTests.m */; };
+		46B12C71199B4E2800CBDB32 /* YMNImageCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B12C70199B4E2800CBDB32 /* YMNImageCropViewController.m */; };
+		46B12C74199B4E5100CBDB32 /* YMNImageCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B12C73199B4E5100CBDB32 /* YMNImageCropView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +46,7 @@
 		46B12C44199B4CB300CBDB32 /* ImageCropSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ImageCropSample-Prefix.pch"; sourceTree = "<group>"; };
 		46B12C45199B4CB300CBDB32 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		46B12C46199B4CB300CBDB32 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		46B12C49199B4CB300CBDB32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		46B12C4C199B4CB300CBDB32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		46B12C49199B4CB300CBDB32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46B12C4E199B4CB300CBDB32 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		46B12C4F199B4CB300CBDB32 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		46B12C51199B4CB300CBDB32 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -55,6 +55,10 @@
 		46B12C60199B4CB300CBDB32 /* ImageCropSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ImageCropSampleTests-Info.plist"; sourceTree = "<group>"; };
 		46B12C62199B4CB300CBDB32 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		46B12C64199B4CB300CBDB32 /* ImageCropSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageCropSampleTests.m; sourceTree = "<group>"; };
+		46B12C6F199B4E2800CBDB32 /* YMNImageCropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMNImageCropViewController.h; sourceTree = "<group>"; };
+		46B12C70199B4E2800CBDB32 /* YMNImageCropViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMNImageCropViewController.m; sourceTree = "<group>"; };
+		46B12C72199B4E5100CBDB32 /* YMNImageCropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMNImageCropView.h; sourceTree = "<group>"; };
+		46B12C73199B4E5100CBDB32 /* YMNImageCropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMNImageCropView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,10 +118,10 @@
 		46B12C3C199B4CB300CBDB32 /* ImageCropSample */ = {
 			isa = PBXGroup;
 			children = (
+				46B12C6E199B4E0300CBDB32 /* ImageCropView */,
 				46B12C45199B4CB300CBDB32 /* AppDelegate.h */,
 				46B12C46199B4CB300CBDB32 /* AppDelegate.m */,
-				46B12C48199B4CB300CBDB32 /* Main_iPhone.storyboard */,
-				46B12C4B199B4CB300CBDB32 /* Main_iPad.storyboard */,
+				46B12C48199B4CB300CBDB32 /* Main.storyboard */,
 				46B12C4E199B4CB300CBDB32 /* ViewController.h */,
 				46B12C4F199B4CB300CBDB32 /* ViewController.m */,
 				46B12C51199B4CB300CBDB32 /* Images.xcassets */,
@@ -153,6 +157,17 @@
 				46B12C61199B4CB300CBDB32 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		46B12C6E199B4E0300CBDB32 /* ImageCropView */ = {
+			isa = PBXGroup;
+			children = (
+				46B12C6F199B4E2800CBDB32 /* YMNImageCropViewController.h */,
+				46B12C70199B4E2800CBDB32 /* YMNImageCropViewController.m */,
+				46B12C72199B4E5100CBDB32 /* YMNImageCropView.h */,
+				46B12C73199B4E5100CBDB32 /* YMNImageCropView.m */,
+			);
+			path = ImageCropView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +246,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46B12C4D199B4CB300CBDB32 /* Main_iPad.storyboard in Resources */,
 				46B12C52199B4CB300CBDB32 /* Images.xcassets in Resources */,
-				46B12C4A199B4CB300CBDB32 /* Main_iPhone.storyboard in Resources */,
+				46B12C4A199B4CB300CBDB32 /* Main.storyboard in Resources */,
 				46B12C41199B4CB300CBDB32 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,7 +268,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				46B12C50199B4CB300CBDB32 /* ViewController.m in Sources */,
+				46B12C74199B4E5100CBDB32 /* YMNImageCropView.m in Sources */,
 				46B12C47199B4CB300CBDB32 /* AppDelegate.m in Sources */,
+				46B12C71199B4E2800CBDB32 /* YMNImageCropViewController.m in Sources */,
 				46B12C43199B4CB300CBDB32 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,20 +302,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		46B12C48199B4CB300CBDB32 /* Main_iPhone.storyboard */ = {
+		46B12C48199B4CB300CBDB32 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				46B12C49199B4CB300CBDB32 /* Base */,
 			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		46B12C4B199B4CB300CBDB32 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				46B12C4C199B4CB300CBDB32 /* Base */,
-			);
-			name = Main_iPad.storyboard;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		46B12C61199B4CB300CBDB32 /* InfoPlist.strings */ = {
@@ -470,6 +478,7 @@
 				46B12C6A199B4CB300CBDB32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		46B12C6B199B4CB300CBDB32 /* Build configuration list for PBXNativeTarget "ImageCropSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +487,7 @@
 				46B12C6D199B4CB300CBDB32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
